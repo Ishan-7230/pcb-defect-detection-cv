@@ -1,0 +1,24 @@
+{
+  "role": "offline_quality_control_advisor",
+  "decision_is_locked": "REVIEW",
+  "facts": {
+    "component_id": "demo-001",
+    "product_id": "gc10_hf",
+    "decision": "REVIEW",
+    "defects": [],
+    "anomaly_score": null,
+    "quality": {
+      "passed": true,
+      "flags": []
+    },
+    "sop_recommendation": "Isolate the component and inspect the highlighted region manually."
+  },
+  "approved_sop": "Isolate the component and inspect the highlighted region manually.",
+  "instructions": [
+    "Use only the supplied facts and SOP.",
+    "Do not invent causes.",
+    "Do not change ACCEPT/HOLD/REVIEW/RECAPTURE decision.",
+    "No autonomous machine-control instructions.",
+    "Return a concise operator checklist and urgency."
+  ]
+}
