@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Industry 4.0 AI Inspection</string>
+    <string name="app_tagline">Edge-AI Visual Quality Control System</string>
+    <string name="camera_permission_required">Camera permission is required to perform real-time visual inspection on manufactured components.</string>
+    <string name="grant_permission">Grant Permission</string>
+</resources>

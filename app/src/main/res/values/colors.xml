@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="industrial_dark">#121820</color>
+    <color name="industrial_surface">#F4F6F9</color>
+    <color name="industrial_card">#FFFFFF</color>
+    <color name="industrial_accent">#0066CC</color>
+    <color name="defect_alert">#D32F2F</color>
+    <color name="pass_green">#2E7D32</color>
+    <color name="warning_amber">#ED6C02</color>
+</resources>
