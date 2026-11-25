@@ -12,7 +12,7 @@ An industrial mobile edge-AI visual inspection application and central quality t
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 1. [System Architecture](#1-system-architecture)
 2. [Core Features](#2-core-features)
@@ -53,14 +53,14 @@ The application implements a clean **MVVM (Model-View-ViewModel)** layered archi
 
 ## 2. Core Features
 
-### 🟢 Feature A: Home Dashboard
+### Feature A: Home Dashboard
 - Real-time model status indicator (`MODEL ACTIVE` / `NOT LOADED`).
 - Engine telemetry: Active provider (CPU / NNAPI), input resolution, defect class count.
 - Key Performance Indicators: Total inspections performed, total defects flagged.
 - Direct navigation hub to Camera, Image Testing, History, Performance, and Settings.
 - Recent inspections list with status badges and latencies.
 
-### 🎥 Feature B: Live Camera Inspection
+###  Feature B: Live Camera Inspection
 - Real-time camera preview powered by **Android CameraX**.
 - Continuous frame acquisition with non-blocking coroutines and thread-safe frame throttling (default 100 ms interval to prevent CPU thermal throttling).
 - Real-time `BoundingBoxOverlay` rendering class-specific high-contrast bounding boxes, defect labels, and confidence tags.
@@ -75,31 +75,30 @@ The application implements a clean **MVVM (Model-View-ViewModel)** layered archi
     - `NO TRAINED DEFECT DETECTED` (Green status badge — strictly compliant with Industry 4.0 QA standards, never falsely claiming guaranteed defect-free)
     - `ERROR` (Amber alert badge)
 - Interactive controls: Pause/Resume Inspection, Flashlight/Torch toggle, and Snapshot Capture & Save.
-
-### 🖼️ Feature C: Image Upload Inspection
+###  Feature C: Image Upload Inspection
 - Photo picker / file selector supporting **JPG, JPEG, PNG, and WebP**.
 - Runs local ONNX inference on imported high-resolution manufacturing images.
 - Displays the annotated component with bounding boxes and defect breakdowns.
 - One-click "Save Record" to store in local Room database and internal storage.
 
-### 📜 Feature D & E: Inspection History & Room Database
+### Feature D & E: Inspection History & Room Database
 - Local SQLite persistence via Room Database (`InspectionEntity`, `InspectionDao`).
 - Filter records by status: `All`, `Defects Only`, `Normal Only`.
 - Inspection detail screen with full-size annotated image view, defect coordinates `[left, top, right, bottom]`, confidence percentages, and timestamps.
 - Record management: Delete individual records or clear complete history.
 
-### 📊 Feature F: Export Reports
+### Feature F: Export Reports
 - Export complete inspection history to **CSV spreadsheet format** (`Inspection_Report_<timestamp>.csv`) via Android `FileProvider` and system share sheet.
 - Export textual inspection certificates for single inspections.
 - Share annotated defect images directly with plant operators and QA managers.
 
-### ⚡ Feature G: Edge AI Performance Monitoring
+### Feature G: Edge AI Performance Monitoring
 - Precise breakdown between model inference latency and total end-to-end pipeline latency.
 - Statistical tracking: Minimum, Maximum, and Average inference latency across inspection sessions.
 - Real-time device memory footprint (Used JVM Heap, Free Heap, Total Allocated Heap).
 - Hardware execution provider verification (CPU with SIMD / XNNPACK vs NNAPI NPU accelerator).
 
-### ⚙️ Feature H: Model Configuration & Hot-Swapping
+### Feature H: Model Configuration & Hot-Swapping
 - **Confidence Threshold Slider**: Configurable from 5% (0.05) to 95% (0.95), defaulting to 25% (0.25). Immediately affects predictions without touching model weights.
 - **NMS IoU Threshold Slider**: Configurable from 10% (0.10) to 90% (0.90), defaulting to 45% (0.45).
 - **Execution Provider Selector**: Toggle between CPU (XNNPACK) and NNAPI with automatic fallback.
