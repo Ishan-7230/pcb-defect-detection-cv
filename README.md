@@ -1,4 +1,4 @@
-# 🏭 Industry 4.0 AI-Powered Visual Quality Inspection System
+# Industry AI-Powered Visual Quality Inspection System
 
 [![Platform](https://img.shields.io/badge/Platform-Android%2010%2B%20%28API%2029%2B%29-blue.svg)](https://developer.android.com)
 [![Language](https://img.shields.io/badge/Language-Kotlin%20%7C%20TypeScript-purple.svg)](https://kotlinlang.org)
